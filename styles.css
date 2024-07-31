@@ -1,41 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0d3864;
+    color: #f4f6fc;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #47c5fb, #3959a1);
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
-    background-color: white;
-    margin: 1rem 0;
-    padding: 1rem;
+    background: linear-gradient(135deg, #fafafa, #eaeaea);
+    margin: 1.5rem 0;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #0d3864;
 }
 
 h2 {
-    color: #333;
+    color: #0d3864;
+    font-size: 2.5rem; /* Increased font size for h2 */
+    text-align: center;
+    font-weight: normal; /* Ensures the text is not bold */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
+    background: linear-gradient(90deg, #47c5fb, #3959a1);
     color: white;
     position: fixed;
     width: 100%;
@@ -43,7 +53,7 @@ footer {
 }
 
 .job, .education-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 ul {
@@ -52,8 +62,23 @@ ul {
 }
 
 ul li {
-    background-color: #eee;
+    background-color: #3959a1;
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #f4f6fc;
+}
+
+ul li:hover {
+    background-color: #47c5fb;
+}
+
+a {
+    color: #47c5fb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
