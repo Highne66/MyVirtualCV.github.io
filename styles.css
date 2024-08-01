@@ -23,7 +23,14 @@ header {
     top: 1.5rem; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: translateX(-50%) scale(1.1); /* Slightly expand the image */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+
 
 header h1 {
     margin: 0;
